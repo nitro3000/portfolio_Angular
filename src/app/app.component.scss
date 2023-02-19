@@ -7,8 +7,6 @@
   p{
     color: var(--primary-color);
     text-align: center;
-
-
   }
     .topDiv{
         display:flex;
@@ -18,6 +16,7 @@
         box-shadow: 0 12px 6px -6px var(--secondary-color);
 
         .title{
+           
             font-size: 56px;
             margin-top: 30px;
             color: var(--primary-color);
@@ -61,16 +60,6 @@
 
         }
 
-        footer{
-            color:burlywood;
-            text-align: center;
-            position: sticky;
-
-             
-    
-            
-        }
-
         .mainContentDiv{
             background-color: var(--background-secondary);
             display: flex;
@@ -102,11 +91,34 @@
                     background-color: var(--secondary-color);
                     color: var(--primary-color);
 
+                    .projectImage{
+                        display: flex;
+                        width: auto;
+                        height: 150px;
+                        border-radius: 5px;
+                        background-color: aqua;
+                        padding: 5px;
+
+                    }
+
                     button{
                         background-color: var(--background-main);
                         color: var(--primary-color);
+                        // align-self: center
+
+                        a{
+                            text-decoration: none;
+                            color: aqua;
+                            counter-increment: initial;
+
+                        }
+                        
+                        
+                      
+                        
 
                     }
+                   
 
                 }
             }
@@ -115,13 +127,7 @@
 
     }
 
-    footer{
-        color:burlywood;
-        text-align: center
-         
 
-        
-    }
 
 
     @media only screen and (min-width: 1080px){
@@ -138,19 +144,15 @@
                }
             }
 
-            footer{
-            color:yellowgreen;
-            bottom: 0;
-           
-            }
+          
 
         }
 
         .topDiv{
             position: relative;
         }
-       
-        
+
+     
     }
 
     @media only screen and (max-width: 300px){
@@ -171,13 +173,18 @@
             
         }
         
-        footer{
+        .footer{
             color:rgb(232, 13, 39);
-            display: none;
-            
-           
-            
+    
         }
     }
 
+}    
+
+.footer{
+    color:burlywood;
+    text-align: center
+     
+
+    
 }
